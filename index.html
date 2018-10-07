@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>网易新闻首页</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        let htmlDom = document.getElementsByTagName('html')[0];
+        htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+        window.addEventListener('resize', () => {
+            htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+        })
+    </script>
+</head>
+<body>
+    <div class="header">
+        <ul class="header-content">
+            <li class="header-item">推荐</li>
+            <li class="header-item">新闻</li>
+            <li class="header-item">娱乐</li>
+            <li class="header-item">体育</li>
+            <li class="header-item">图片</li>
+            <li class="header-item">财经</li>
+        </ul>
+    </div>
+    <div class="banner-content">
+        <img src="./img/top.jpeg" alt="" class="banner" />
+        <p class="banner-title">2017网易时尚盛典</p>
+    </div>
+    <div class="news-content">
+        <ul>
+            <li class="news-item">
+                <div class="item-inner">
+                    <img class="news-img" src="./img/1.jpeg" alt="">
+                    <p class="new-title">天津市副秘书长，办公厅主任天津市副秘书长，办公厅主任</p>
+                    <span class="time">1小时前</span><span class="num">99</span>
+                </div>
+            </li>
+            <li class="news-item">
+                <div class="item-inner">
+                    <img class="news-img" src="./img/1.jpeg" alt="">
+                    <p class="new-title">天津市副秘书长，办公厅主任天津市副秘书长，办公厅主任</p>
+                    <span class="time">1小时前</span><span class="num">99</span>
+                </div>
+            </li><li class="news-item">
+                <div class="item-inner">
+                    <img class="news-img" src="./img/1.jpeg" alt="">
+                    <p class="new-title">天津市副秘书长，办公厅主任天津市副秘书长，办公厅主任</p>
+                    <span class="time">1小时前</span><span class="num">99</span>
+                </div>
+            </li><li class="news-item">
+                <div class="item-inner">
+                    <img class="news-img" src="./img/1.jpeg" alt="">
+                    <p class="new-title">天津市副秘书长，办公厅主任天津市副秘书长，办公厅主任</p>
+                    <span class="time">1小时前</span><span class="num">99</span>
+                </div>
+            </li><li class="news-item">
+                <div class="item-inner">
+                    <img class="news-img" src="./img/1.jpeg" alt="">
+                    <p class="new-title">天津市副秘书长，办公厅主任天津市副秘书长，办公厅主任</p>
+                    <span class="time">1小时前</span><span class="num">99</span>
+                </div>
+            </li><li class="news-item">
+                <div class="item-inner">
+                    <img class="news-img" src="./img/1.jpeg" alt="">
+                    <p class="new-title">天津市副秘书长，办公厅主任天津市副秘书长，办公厅主任</p>
+                    <span class="time">1小时前</span><span class="num">99</span>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!--<script type="text/javascript" src="bundle.js"></script>-->
+</body>
+</html>

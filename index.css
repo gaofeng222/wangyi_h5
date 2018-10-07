@@ -1,0 +1,85 @@
+.header {
+  height: 1.06667rem;
+  width: 100%;
+  background: red; }
+  .header .header-content {
+    overflow: hidden;
+    padding-left: 0.61333rem; }
+  .header .header-item {
+    float: left;
+    font-size: 0.42667rem;
+    color: #fff;
+    margin-right: 0.53333rem;
+    line-height: 1.06667rem; }
+    .header .header-item:nth-child(2) {
+      color: #fff;
+      font-size: 0.45333rem; }
+
+.banner-content {
+  position: relative; }
+  .banner-content .banner {
+    width: 100%;
+    height: 5.06667rem;
+    display: block; }
+  .banner-content .banner-title {
+    position: absolute;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    font-size: 0.42667rem;
+    width: 100%;
+    line-height: 1.06667rem;
+    text-indent: 2em; }
+
+.news-content .news-item {
+  width: 100%;
+  background: #fff;
+  height: 2.4rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0.26667rem; }
+.news-content .item-inner {
+  border-bottom: 0.02667rem solid #e5e5e5;
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+  .news-content .item-inner img {
+    float: left;
+    display: block;
+    width: 2.53333rem;
+    height: 1.86667rem;
+    margin-top: 0.26667rem;
+    margin-right: 0.42667rem; }
+  .news-content .item-inner .new-title {
+    color: #404040;
+    font-size: 0.42667rem;
+    margin-top: 0.42667rem;
+    line-height: 0.53333rem; }
+  .news-content .item-inner .time {
+    position: absolute;
+    left: 2.93333rem;
+    bottom: 0.45333rem;
+    color: #888;
+    font-size: 0.32rem; }
+  .news-content .item-inner .num {
+    position: absolute;
+    font-size: 0.32rem;
+    color: #888;
+    right: 0.10667rem;
+    bottom: 0.45333rem; }
+    .news-content .item-inner .num:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0.56rem;
+      height: 0.53333rem;
+      left: -0.69333rem;
+      background: url(./img/read.png) no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain; }
+
+/*# sourceMappingURL=index.css.map */

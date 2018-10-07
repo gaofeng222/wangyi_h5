@@ -1,0 +1,103 @@
+@function px2Rem($px){
+  $rem : 37.5px;
+  @return ($px/$rem) + rem;
+}
+.header {
+  height : px2Rem(40px);
+  width : 100%;
+  background: red;
+
+  .header-content{
+    overflow: hidden;
+    padding-left : px2Rem(23px);
+  }
+  .header-item{
+    float : left;
+    font-size : px2Rem(16px);
+    color: #fff;
+    margin-right:px2Rem(20px);
+    line-height: px2Rem(40px);
+
+    &:nth-child(2){
+      color :#fff;
+      font-size: px2Rem(17px);
+    }
+  }
+}
+.banner-content{
+  position: relative;
+  .banner{
+    width:100%;
+    height:px2Rem(190px);
+    display: block;
+  }
+  .banner-title{
+    position: absolute;
+    color : #fff;
+    background:rgba(0,0,0,.5);
+    bottom:0;
+    left:0;
+    font-size: px2Rem(16px);
+    width:100%;
+    line-height:px2Rem(40px);
+    text-indent:2em;
+  }
+}
+.news-content{
+  .news-item{
+    width:100%;
+    background: #fff;
+    height:px2Rem(90px);
+    padding-left : px2Rem(15px);
+    padding-right : px2Rem(15px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  margin-bottom: px2Rem(10px);
+  }
+  .item-inner {
+    border-bottom: px2Rem(1px) solid #e5e5e5;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    img{
+      float: left;
+      display: block;
+      width : px2Rem(95px);
+      height:px2Rem(70px);
+      margin-top:px2Rem(10px);
+      margin-right: px2Rem(16px);
+    }
+    .new-title{
+      color:#404040;
+      font-size:px2Rem(16px);
+      margin-top:px2Rem(16px);
+      line-height:px2Rem(20px);
+    }
+    .time{
+      position: absolute;
+      left : px2Rem(110px);
+      bottom: px2Rem(17px);
+      color:#888;
+      font-size:px2Rem(12px);
+    }
+    .num{
+      position: absolute;
+      font-size:px2Rem(12px);
+      color:#888;
+      right : px2Rem(4px);
+      bottom: px2Rem(17px);
+      &:before {
+        content : '';
+        display: block;
+        position: absolute;
+        width:px2Rem(21px);
+        height:px2Rem(20px);
+        left:px2Rem(-26px);
+        background: url(./img/read.png) no-repeat;
+        -webkit-background-size:contain;
+        background-size:contain;;
+      }
+    }
+  }
+}
